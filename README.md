@@ -23,17 +23,21 @@ Download and install Nmap from the official website:
 You can find your local IP and subnet using:
 
 #### On Linux/macOS:
-```bash
-ip a:
 
----
+```bash
+ip a 
+```
 
 #### On Windows:
+```
 ipconfig
+```
 Example IP range: 192.168.1.0/24
 
 ### 3. Run a TCP SYN Scan
+```
 nmap -sS 192.168.1.0/24
+```
 This performs a stealthy scan to detect live hosts and open TCP ports.
 
 ### 4. Record Findings
@@ -70,9 +74,10 @@ Start a capture in Wireshark to analyze how devices respond to the scan.
 As a text file:
 ```bash
 nmap -sS 192.168.1.0/24 -oN scan_results.txt
-
+```
 
 As HTML:
 ```bash
 nmap -sS 192.168.1.0/24 -oX scan_results.xml
 xsltproc scan_results.xml -o scan_results.html
+```
