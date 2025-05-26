@@ -24,7 +24,9 @@ You can find your local IP and subnet using:
 
 #### On Linux/macOS:
 ```bash
-ip a
+ip a:
+
+---
 
 #### On Windows:
 ipconfig
